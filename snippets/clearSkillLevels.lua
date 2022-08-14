@@ -2,7 +2,7 @@
 --// Clear all skills and xp
 --// Author: Colin J.D. Stewart | Updated: 14.08.2022
 --// 
-local function clearSkillLevels(player)
+local function clearSkills(player)
 	local pl = PerkFactory.PerkList;
 	local xp = player:getXp();
 	
