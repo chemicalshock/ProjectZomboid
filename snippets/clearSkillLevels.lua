@@ -12,9 +12,7 @@ local function clearSkillLevels(player)
 		local curLevel = player:getPerkLevel(pk);
 		
 		if curLevel > 0 then
-			for i = curLevel, 0, -1 do
-				player:LoseLevel(pk);
-			end;
+			player:level0(pk);
 		end;
 		
 		xp:setXPToLevel(pk, player:getPerkLevel(pk));
